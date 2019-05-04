@@ -40,3 +40,139 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.doporucujeme {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    color: white;
+}
+
+.recept-nazev {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.recept-kategorie {
+    padding: 10px; 
+}
+
+.recept-komentare {
+    padding: 10px;
+    float: right;
+}
+
+.hlavni-recept .recept-nazev {
+    font-size: 28px; 
+}
+
+.recept-meta {
+    display: flex;
+    justify-content:space-between;
+}
+
+.hlavni-recept {
+    flex: 1 1 100%;
+    min-height:200px;
+    background-image: url("images/burger.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sloupec {
+    flex: 1 1 100%;
+}
+
+.recept {
+    min-height: 90px;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recept2{
+background-image: url("images/sushi.jpg");
+background-size:cover;
+}
+
+.recept3{
+    background-image: url("images/rajcata.jpg"); 
+    background-size:cover; 
+}
+.recept4 {
+    background-image: url("images/kure.jpg"); 
+    background-size:cover; 
+}
+
+.recept5 {
+    background-image: url("images/grilovani.jpg");
+    background-size:cover;   
+}
+
+
+@media(min-width: 480px) {
+.doporucujeme {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.hlavni-recept {
+    min-height:250px;
+    flex: 1 1 100%;
+}
+
+.sloupec {
+flex: 1 1 50%;
+min-height: 180px;
+}
+
+.sloupec {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recept-nazev {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.hlavni-recept .recept-nazev{
+    font-size: 36px; 
+}
+}
+
+.recept .recept2{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@media(min-width: 860px) {
+    
+    .hlavni-recept {
+        min-height:400px;
+        flex: 1 1 33.33%;
+    }
+   
+    .recept {
+        min-height: 200px;
+    }
+
+    .sloupec {
+        flex: 1 1 33.33%;
+    }
+
+    .recept-nazev {
+        font-size: 28px;
+        padding: 10px;
+    }
+    
+    .hlavni-recept .recept-nazev{
+        font-size: 48px; 
+    }
+}
+
+
